@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import { Route, Routes, useNavigate } from "react-router-dom";
-import "./App.scss";
-import { todo } from "./Components/helperTodo";
 import Login from "./Screens/Login/Login";
 import Dashboard from "./Screens/Dashboard/Dashboard";
+import "./App.scss";
 
 function App() {
   const navigate = useNavigate();
   useEffect(() => {
-    if (localStorage.getItem("fullName") === null) {
+    if (localStorage.getItem("username") === null) {
       navigate("/login");
     }
   }, []);

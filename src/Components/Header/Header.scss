@@ -11,4 +11,10 @@
   left: 0;
   z-index: 10;
   background: #fff;
+
+  .logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

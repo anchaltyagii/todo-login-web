@@ -8,6 +8,19 @@
   pointer-events: none;
 }
 
+h4 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

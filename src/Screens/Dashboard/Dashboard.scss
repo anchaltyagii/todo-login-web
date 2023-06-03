@@ -34,5 +34,27 @@
       margin: 10px;
       padding: 15px;
     }
+
+    .subtask-btn {
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .todo-wrapper {
+    .todo-list-container {
+      height: auto;
+      width: 90%;
+      padding: 20px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .subtask-container {
+      padding: 0 5% 0 5%;
+    }
   }
 }

@@ -5,15 +5,19 @@ import "./Header.scss";
 const Header = () => {
   const navigate = useNavigate();
 
-  const username = localStorage.getItem("fullName");
+  const username = localStorage.getItem("username");
   const handleLogout = () => {
-    localStorage.removeItem("fullName");
+    localStorage.removeItem("username");
     navigate("/login");
   };
   return (
     <div className="header__container">
-      <div>Welcome {username}</div>
-      <div onClick={handleLogout}>Logout</div>
+      <div>
+        Welcome <b>{username}</b>
+      </div>
+      <button className="btn btn-primary logout-btn" onClick={handleLogout}>
+        Logout
+      </button>
     </div>
   );
 };
